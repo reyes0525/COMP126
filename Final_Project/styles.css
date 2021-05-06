@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 15vh 73vh 12vh;
+    font-family: 'Open Sans', sans-serif;
+    background: lightgrey;
+}
+header {
+    display: flex;
+    background: #7BAFD4;
+    padding: 1rem;
+    align-items: center;
+    grid-area: 1/1/2/6;
+}
+h1 {
+    margin-left: 2%;
+    margin-right: 10%;
+}
+nav {
+    width: 70%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    list-style: none;
+    align-items: center;
+}
+nav a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+}
+.head-menu a:hover {
+    color: black;
+    font-size: larger;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #7BAFD4;
+    padding: 1rem;
+    align-items: center;
+    grid-area: 3/1/4/6
+}
+.foot-menu a:hover {
+    color: black;
+}
+.search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+}
+.search-button {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: grey;
+    color: white;
+    font-size: 16px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+.search-button:hover {
+    background: #000080;
+}
+#newsletter-main {
+    grid-area: 2/1/3/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#newsletter-head {
+    margin: 1%;
+}
+#newsletter-form {
+    padding: 35px;
+    width: 40vw;
+    margin: auto;
+    border: 1px solid #000080;
+    background: #7BAFD4;
+}
+#newsletter-form div {
+    margin-bottom: 10px;
+}
+.newsletter-label {
+    display: block;
+    margin-bottom: 10px;
+}
+.newsletter-label span {
+    color: red;
+}
+.email-input input {
+    width: 95%;
+    padding: 15px;
+}
+.name-input {
+    display: flex;
+    margin-top: 20px;
+}
+.name-input input {
+    display: flex;
+    padding: 15px;
+    width: 275px;
+}
+#firstname-div {
+    margin-right: 25px;
+}
+.checkbox input {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+#newsletter-button {
+    background: grey;
+    border: 0;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#newsletter-button:hover {
+    cursor: pointer;
+    background: #000080;
+}
+.name-input input:valid,
+.email-input input:valid {
+    border: 2px solid green;
+}
+.name-input input:invalid,
+.email-input input:invalid {
+    border: 2px solid red;
+}
+#season-main {
+    grid-area: 2/1/3/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#season-section {
+    background: #7BAFD4;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+}
+#season-head {
+    margin: 1%;
+}
+.season-div-head {
+    margin: 1rem;
+}
+.season-div {
+    border: 1px solid #000080;
+    background: whitesmoke;
+    height: 48vh;
+    width: 25vw;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+#per-main {
+    grid-area: 2/1/3/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#per-section {
+    display: flex;
+}
+.per-div {
+    background: #7BAFD4;
+    border: 1px solid black;
+    margin: 1rem;
+}
+.per-div-head {
+    margin: 1rem;
+}
+#per-staff-div {
+    border: 1px solid #000080;
+    background: whitesmoke;
+    height: 48vh;
+    width: 25vw;
+    margin: 1rem;
+    margin-top: 0;
+}
+#per-roster-div {
+    border: 1px solid #000080;
+    background: whitesmoke;
+    height: 48vh;
+    width: 60vw;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+.home-section-head {
+    margin: 1rem;
+}
+#home-section1 {
+    grid-area: 2/1/3/3;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;
+    border: 1px solid #000080;
+    background: #7BAFD4; */
+}
+.home-section1-div {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000080;
+    background: #7BAFD4;
+}
+.home-section1-content {
+    border: 1px solid #000080;
+    background: whitesmoke;
+    height: 20vh;
+    width: 30vw;
+    margin: 1rem;
+    margin-top: 0;
+}
+#home-section2 {
+    grid-area: 2/3/3/5;
+    display: flex;
+}
+#home-section2-div {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000080;
+    background: #7BAFD4;
+}
+#home-blog-div {
+    border: 1px solid #000080;
+    background: whitesmoke;
+    height: 55vh;
+    width: 35vw;
+    margin: 1rem;
+    margin-top: 0;
+}
+#home-section3 {
+    grid-area: 2/5/3/6;
+    display: flex;
+}
+#social-div {
+    margin: 20px;
+    height: 68vh;
+    width: 100%;
+    border: 1px solid black;
+}
