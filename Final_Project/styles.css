@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     display: grid;
@@ -9,6 +10,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: lightgrey;
 }
+
+
+/* Header */
 header {
     display: flex;
     background: #7BAFD4;
@@ -16,7 +20,7 @@ header {
     align-items: center;
     grid-area: 1/1/2/6;
 }
-h1 {
+#head-logo {
     margin-left: 2%;
     margin-right: 10%;
 }
@@ -43,6 +47,19 @@ nav a {
     font-size: larger;
 }
 
+
+/* Main */
+.main-h1 {
+    margin: 1%;
+}
+.img-source {
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Footer  */
 footer {
     display: flex;
     justify-content: space-around;
@@ -76,6 +93,9 @@ footer {
 .search-button:hover {
     background: #000080;
 }
+
+
+/* Newsletter Page */
 #newsletter-main {
     grid-area: 2/1/3/6;
     display: flex;
@@ -83,38 +103,36 @@ footer {
     align-items: center;
     justify-content: center;
 }
-#newsletter-head {
-    margin: 1%;
-}
 #newsletter-form {
     padding: 35px;
-    width: 40vw;
-    margin: auto;
+    width: 40%;
+    height: 90%;
+    margin: 20px;
     border: 1px solid #000080;
     background: #7BAFD4;
 }
+
 #newsletter-form div {
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 .newsletter-label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 .newsletter-label span {
     color: red;
 }
 .email-input input {
-    width: 95%;
+    width: 100%;
     padding: 15px;
 }
 .name-input {
     display: flex;
-    margin-top: 20px;
 }
 .name-input input {
     display: flex;
     padding: 15px;
-    width: 275px;
+    width: 22vw;
 }
 #firstname-div {
     margin-right: 25px;
@@ -144,6 +162,9 @@ footer {
 .email-input input:invalid {
     border: 2px solid red;
 }
+
+
+/* Season Page */
 #season-main {
     grid-area: 2/1/3/6;
     display: flex;
@@ -152,41 +173,42 @@ footer {
     justify-content: center;
 }
 #season-section {
+    display: flex;
     background: #7BAFD4;
     border: 1px solid black;
-    margin: auto;
-    display: flex;
-}
-#season-head {
-    margin: 1%;
+    margin: 20px;
+    margin-top: 0;
+    height: 80%;
+    width: 50%;
 }
 .season-div-head {
     margin: 1rem;
 }
+.season-div-wrap {
+    width: 100%;
+}
 .season-div {
     display: flex;
-    justify-content: center;
+    align-content: center;
     border: 1px solid #000080;
     background: whitesmoke;
-    height: 48vh;
-    width: fit-content;
+    height: 75%;
+    max-width: fit-content;
     margin: 1rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
-#schedule-img {
+.season-img {
     max-height: 100%;
-    max-width: 100%;
-}
-.img-source {
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    width: 100%;
 }
 .season-link {
     text-decoration: none;
     color: white;
 }
 
+
+/* Personnel Page */
 #per-main {
     grid-area: 2/1/3/6;
     display: flex;
@@ -196,41 +218,46 @@ footer {
 }
 #per-section {
     display: flex;
+    margin: 20px;
+    margin-top: 0;
+    height: 80%;
 }
 .per-div {
     background: #7BAFD4;
     border: 1px solid black;
     margin: 1rem;
+    height: 100%
 }
 .per-div-head {
     margin: 1rem;
 }
 #per-staff-div {
+    display: flex;
+    align-content: center;
     border: 1px solid #000080;
     background: whitesmoke;
-    height: 48vh;
+    height: 72%;
     width: 25vw;
     margin: 1rem;
     margin-top: 0;
 }
 #per-roster-div {
+    display: flex;
+    align-content: center;
     border: 1px solid #000080;
     background: whitesmoke;
-    height: 48vh;
-    width: fit-content;
+    height: 72%;
+    width: 50vw;
     margin: 1rem;
     margin-top: 0;
 }
 #staff-img {
     max-height: 100%;
-    max-width: 100%;
-    border-bottom: 1px solid #000080;
-}
-#staff-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 100%;
 }
 
+
+/* Home Page */
 .home-section-head {
     margin: 1rem;
 }
@@ -238,24 +265,24 @@ footer {
     grid-area: 2/1/3/3;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center;
-    border: 1px solid #000080;
-    background: #7BAFD4; */
 }
 .home-section1-div {
-    margin: auto;
+    margin: 20px;
     align-items: center;
     justify-content: center;
     border: 1px solid #000080;
     background: #7BAFD4;
+    height: 42%;
+    width: 94%;
+    padding: 1rem;
+    padding-top: 0;
 }
 .home-section1-content {
     display: flex;
     border: 1px solid #000080;
     background: whitesmoke;
-    height: 20vh;
-    width: 30vw;
+    height: 70%;
+    width: fit-content;
     margin: 1rem;
     margin-top: 0;
     padding: 1rem;
@@ -265,6 +292,8 @@ footer {
 }
 .home-season-content {
     margin-left: 1rem;
+    height: fit-content;
+    font-size: 1vw;
 }
 #home-section2 {
     grid-area: 2/3/3/5;
@@ -276,16 +305,19 @@ footer {
     justify-content: center;
     border: 1px solid #000080;
     background: #7BAFD4;
+    height: 92%;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0;
 }
 #home-blog-div {
     border: 1px solid #000080;
     background: whitesmoke;
-    height: 55vh;
-    width: 35vw;
-    margin: 1rem;
+    height: 88%;
+    width: 100%;
     margin-top: 0;
-    padding-left: 1rem;
-    padding-top: 1rem
+    padding: 1rem;
+
 }
 #home-section3 {
     grid-area: 2/5/3/6;
@@ -297,3 +329,81 @@ footer {
     width: 100%;
     border: 1px solid black;
 }
+
+/* Media Queries */
+@media screen and (max-width: 959px) {
+    body {
+        display: block;
+    }
+    header {
+        justify-content: center;
+        align-content: center;
+    }
+    .menu-break {
+        display: none;
+    }
+    #head-logo {
+        margin: 0;
+    }
+    footer {
+        justify-content: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+
+    /* Home Page */
+    .home-section1-content {
+        flex-direction: column;
+    }
+    #home-section2-div {
+        width: 100%;
+    }
+    .home-season-content {
+        font-size: 16px;
+    }
+
+    /* Season Page */
+    #season-section {
+        flex-direction: column;
+        width: 90%;
+    }
+    .season-div {
+        min-width: fit-content;
+    }
+
+    /* Personnel Page */
+    #per-section {
+        flex-direction: column;
+    }
+    #per-staff-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+    #per-roster-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    /* Newsletter Page */
+    #newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .name-input {
+        flex-direction: column;
+    }
+    .name-input input {
+        width: 100%;
+    }
+    #firstname-div {
+        margin-right: 0;
+    }
+}
+
