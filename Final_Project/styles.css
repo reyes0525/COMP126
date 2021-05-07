@@ -164,12 +164,27 @@ footer {
     margin: 1rem;
 }
 .season-div {
+    display: flex;
+    justify-content: center;
     border: 1px solid #000080;
     background: whitesmoke;
     height: 48vh;
-    width: 25vw;
+    width: fit-content;
     margin: 1rem;
     margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+#schedule-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.img-source {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.season-link {
+    text-decoration: none;
+    color: white;
 }
 
 #per-main {
@@ -202,9 +217,18 @@ footer {
     border: 1px solid #000080;
     background: whitesmoke;
     height: 48vh;
-    width: 60vw;
+    width: fit-content;
     margin: 1rem;
     margin-top: 0;
+}
+#staff-img {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #000080;
+}
+#staff-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .home-section-head {
@@ -227,12 +251,20 @@ footer {
     background: #7BAFD4;
 }
 .home-section1-content {
+    display: flex;
     border: 1px solid #000080;
     background: whitesmoke;
     height: 20vh;
     width: 30vw;
     margin: 1rem;
     margin-top: 0;
+    padding: 1rem;
+}
+.bold-content {
+    font-weight: bold;
+}
+.home-season-content {
+    margin-left: 1rem;
 }
 #home-section2 {
     grid-area: 2/3/3/5;
@@ -252,6 +284,8 @@ footer {
     width: 35vw;
     margin: 1rem;
     margin-top: 0;
+    padding-left: 1rem;
+    padding-top: 1rem
 }
 #home-section3 {
     grid-area: 2/5/3/6;
